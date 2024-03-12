@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <link rel= "stylesheet" href="style.css"/>
+    <link rel= "stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Vysh </div>
+        <ul class="nav-links"> 
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Vyshnav MV</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile.png" alt="vysh-pic"
+        </div>
+        <div class="section_text">
+            <p class="section_test_p1"> Hello, I'm</p>
+            <h1 class="title"> Vyshnav MV</h1>
+            <P class="section_test_p2"> Fresher </P>
+                <button class="btn btn-color-2"
+                onclick="window.open('./assets/Vyshnav_MV_r_ (1).pdf')">
+                Download CV</button>
+                <button class="btn btn-color-1"
+                onclick="Location.href('./#contact')">
+                Contact info </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin (1).png" alt="My Link"
+            class="icon" onclick="location.href='https://linkedin.com'">
+        </div>
+        <div id="socials-container">
+            <img src="./assets/email.png" alt="My Email"
+            class="icon" onclick="location.href='https://vyshnavmv15@gmail.com'">
+        </div>
+        <div id="socials-container">
+            <img src="./assets/github.png" alt="My Git"
+            class="icon" onclick="location.href='https://github.com'">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
